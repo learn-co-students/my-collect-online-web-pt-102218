@@ -4,8 +4,8 @@ def my_collect(languages)
   if languages.any?
 
   while i < languages.length
-    yield (languages[i])
-    new_array << languages[i]
+modified_array =  yield (languages[i])
+    new_array << modified_array
     i += 1
   end
 
